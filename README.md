@@ -1,0 +1,4 @@
+- `container.db.inspect.txt` -- The output of `docker container inspect dbtest-db-1`
+- `container.phpmyadmin.inspect.txt` --  The output of `docker container inspect dbtest-phpmyadmin-1`
+- `network.dbtest_default.inspect.txt` -- The output of `docker network inspect dbtest_default`
+- `session.txt` -- The output of running `docker compose up` and successfully connecting to `phpmyadmin` from a browser.

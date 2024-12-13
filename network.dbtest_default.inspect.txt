@@ -1,0 +1,49 @@
+[
+    {
+        "Name": "dbtest_default",
+        "Id": "b61586e2d055ddb12a490bc78b7f12799be50fbe2ce6dd41b7db8b986ed746fc",
+        "Created": "2024-12-12T19:51:51.250360604-05:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.20.0.0/16",
+                    "Gateway": "172.20.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "1f7aba36e3f13719cc232fcfc08fd2605307b39c62b54b990b296096dabcafa4": {
+                "Name": "dbtest-db-1",
+                "EndpointID": "fe5b952b6ab546bd684a8cf7ee6a6ff26dbf2f6b7c4985ecfd6123485b41abd1",
+                "MacAddress": "02:42:ac:14:00:02",
+                "IPv4Address": "172.20.0.2/16",
+                "IPv6Address": ""
+            },
+            "870aa6f167cddc0d1612aca5bfdfd8cc9fe95315f5b796114bf8e4c5484851f7": {
+                "Name": "dbtest-phpmyadmin-1",
+                "EndpointID": "74a5ce000d1ecb669708fd729a9af5e986367d021a0f51b0a49c5031e2c10c4f",
+                "MacAddress": "02:42:ac:14:00:03",
+                "IPv4Address": "172.20.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.network": "default",
+            "com.docker.compose.project": "dbtest",
+            "com.docker.compose.version": "2.29.7"
+        }
+    }
+]
